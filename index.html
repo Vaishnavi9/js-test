@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON Sandbox</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js">
+</head>
+
+<body>
+    <ul id="people"></ul>
+    <script>
+	
+	//product json object to be processed
+        var product = {
+            "id": 1500523298891,
+            "title": "tshirt 1",
+            "body_html": "\u003cp\u003e \u003c\/p\u003e",
+            "vendor": "viadev-4",
+            "product_type": "",
+            "created_at": "2019-02-07T09:40:06-05:00",
+            "handle": "product_1",
+            "updated_at": "2019-03-25T02:54:27-04:00",
+            "published_at": "2019-02-07T09:39:59-05:00",
+            "template_suffix": null,
+            "tags": "",
+            "published_scope": "web",
+            "variants": [{
+                "id": 13688866799691,
+                "product_id": 1500523298891,
+                "title": "Men \/ Green \/ S",
+                "price": "0.00",
+                "sku": "",
+                "position": 1,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Green",
+                "option3": "S",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:53:57-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781580363,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221262411,
+                "requires_shipping": true
+            }, {
+                "id": 13688866832459,
+                "product_id": 1500523298891,
+                "title": "Men \/ Green \/ M",
+                "price": "0.00",
+                "sku": "",
+                "position": 2,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Green",
+                "option3": "M",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781580363,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221295179,
+                "requires_shipping": true
+            }, {
+                "id": 13688866865227,
+                "product_id": 1500523298891,
+                "title": "Men \/ Green \/ L",
+                "price": "0.00",
+                "sku": "",
+                "position": 3,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Green",
+                "option3": "L",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781580363,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221327947,
+                "requires_shipping": true
+            }, {
+                "id": 13688866897995,
+                "product_id": 1500523298891,
+                "title": "Men \/ Green \/ XL",
+                "price": "0.00",
+                "sku": "",
+                "position": 4,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Green",
+                "option3": "XL",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781580363,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221360715,
+                "requires_shipping": true
+            }, {
+                "id": 13688866930763,
+                "product_id": 1500523298891,
+                "title": "Men \/ Green \/ 2XL",
+                "price": "0.00",
+                "sku": "",
+                "position": 5,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Green",
+                "option3": "2XL",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:27-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781580363,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221393483,
+                "requires_shipping": true
+            }, {
+                "id": 13688866963531,
+                "product_id": 1500523298891,
+                "title": "Men \/ Navy \/ S",
+                "price": "0.00",
+                "sku": "",
+                "position": 6,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Navy",
+                "option3": "S",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781613131,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221426251,
+                "requires_shipping": true
+            }, {
+                "id": 13688866996299,
+                "product_id": 1500523298891,
+                "title": "Men \/ Navy \/ M",
+                "price": "0.00",
+                "sku": "",
+                "position": 7,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Navy",
+                "option3": "M",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:25-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781613131,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221459019,
+                "requires_shipping": true
+            }, {
+                "id": 13688867029067,
+                "product_id": 1500523298891,
+                "title": "Men \/ Navy \/ L",
+                "price": "0.00",
+                "sku": "",
+                "position": 8,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Navy",
+                "option3": "L",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:25-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781613131,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221491787,
+                "requires_shipping": true
+            }, {
+                "id": 13688867061835,
+                "product_id": 1500523298891,
+                "title": "Men \/ Navy \/ XL",
+                "price": "0.00",
+                "sku": "",
+                "position": 9,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Navy",
+                "option3": "XL",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:27-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781613131,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221524555,
+                "requires_shipping": true
+            }, {
+                "id": 13688867094603,
+                "product_id": 1500523298891,
+                "title": "Men \/ Navy \/ 2XL",
+                "price": "0.00",
+                "sku": "",
+                "position": 10,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Men",
+                "option2": "Navy",
+                "option3": "2XL",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781613131,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221557323,
+                "requires_shipping": true
+            }, {
+                "id": 13688867422283,
+                "product_id": 1500523298891,
+                "title": "Women \/ Green \/ XS",
+                "price": "0.00",
+                "sku": "",
+                "position": 11,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Green",
+                "option3": "XS",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781645899,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221885003,
+                "requires_shipping": true
+            }, {
+                "id": 13688867291211,
+                "product_id": 1500523298891,
+                "title": "Women \/ Green \/ S",
+                "price": "0.00",
+                "sku": "",
+                "position": 12,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Green",
+                "option3": "S",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:27-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781645899,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221753931,
+                "requires_shipping": true
+            }, {
+                "id": 13688867323979,
+                "product_id": 1500523298891,
+                "title": "Women \/ Green \/ M",
+                "price": "0.00",
+                "sku": "",
+                "position": 13,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Green",
+                "option3": "M",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:25-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781645899,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221786699,
+                "requires_shipping": true
+            }, {
+                "id": 13688867356747,
+                "product_id": 1500523298891,
+                "title": "Women \/ Green \/ L",
+                "price": "0.00",
+                "sku": "",
+                "position": 14,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Green",
+                "option3": "L",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:25-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781645899,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221819467,
+                "requires_shipping": true
+            }, {
+                "id": 13688867389515,
+                "product_id": 1500523298891,
+                "title": "Women \/ Green \/ XL",
+                "price": "0.00",
+                "sku": "",
+                "position": 15,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Green",
+                "option3": "XL",
+                "created_at": "2019-02-07T09:40:07-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781645899,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787221852235,
+                "requires_shipping": true
+            }, {
+                "id": 13688867749963,
+                "product_id": 1500523298891,
+                "title": "Women \/ Black \/ XS",
+                "price": "0.00",
+                "sku": "",
+                "position": 16,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Black",
+                "option3": "XS",
+                "created_at": "2019-02-07T09:40:08-05:00",
+                "updated_at": "2019-03-25T02:54:25-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781678667,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787222212683,
+                "requires_shipping": true
+            }, {
+                "id": 13688867618891,
+                "product_id": 1500523298891,
+                "title": "Women \/ Black \/ S",
+                "price": "0.00",
+                "sku": "",
+                "position": 17,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Black",
+                "option3": "S",
+                "created_at": "2019-02-07T09:40:08-05:00",
+                "updated_at": "2019-03-25T02:54:25-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781678667,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787222081611,
+                "requires_shipping": true
+            }, {
+                "id": 13688867651659,
+                "product_id": 1500523298891,
+                "title": "Women \/ Black \/ M",
+                "price": "0.00",
+                "sku": "",
+                "position": 18,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Black",
+                "option3": "M",
+                "created_at": "2019-02-07T09:40:08-05:00",
+                "updated_at": "2019-03-25T02:54:26-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781678667,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787222114379,
+                "requires_shipping": true
+            }, {
+                "id": 13688867684427,
+                "product_id": 1500523298891,
+                "title": "Women \/ Black \/ L",
+                "price": "0.00",
+                "sku": "",
+                "position": 19,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Black",
+                "option3": "L",
+                "created_at": "2019-02-07T09:40:08-05:00",
+                "updated_at": "2019-03-25T02:54:25-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781678667,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787222147147,
+                "requires_shipping": true
+            }, {
+                "id": 13688867717195,
+                "product_id": 1500523298891,
+                "title": "Women \/ Black \/ XL",
+                "price": "0.00",
+                "sku": "",
+                "position": 20,
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Women",
+                "option2": "Black",
+                "option3": "XL",
+                "created_at": "2019-02-07T09:40:08-05:00",
+                "updated_at": "2019-03-25T02:54:27-04:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": 4276781678667,
+                "weight": 0.0,
+                "weight_unit": "kg",
+                "inventory_item_id": 13787222179915,
+                "requires_shipping": true
+            }],
+            "options": [{
+                "id": 2001008754763,
+                "product_id": 1500523298891,
+                "name": "Fit Type",
+                "position": 1,
+                "values": [
+                    "Men",
+                    "Women"
+                ]
+            }, {
+                "id": 2001008787531,
+                "product_id": 1500523298891,
+                "name": "Color",
+                "position": 2,
+                "values": [
+                    "Green",
+                    "Navy",
+                    "Black"
+                ]
+            }, {
+                "id": 2001008820299,
+                "product_id": 1500523298891,
+                "name": "Size",
+                "position": 3,
+                "values": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "2XL",
+                    "XS"
+                ]
+            }],
+            "images": [{
+                "id": 4276781580363,
+                "product_id": 1500523298891,
+                "position": 1,
+                "created_at": "2019-02-07T09:40:06-05:00",
+                "updated_at": "2019-02-07T09:40:06-05:00",
+                "alt": null,
+                "width": 1500,
+                "height": 1403,
+                "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/9952\/9291\/products\/8187mxnU4fL._UL1500__1_d4e60181-765b-4d8a-bc11-b060e7c4be6c.jpg?v=1549550406",
+                "variant_ids": [
+                    13688866799691,
+                    13688866832459,
+                    13688866865227,
+                    13688866897995,
+                    13688866930763
+                ]
+            }, {
+                "id": 4276781613131,
+                "product_id": 1500523298891,
+                "position": 2,
+                "created_at": "2019-02-07T09:40:06-05:00",
+                "updated_at": "2019-02-07T09:40:06-05:00",
+                "alt": null,
+                "width": 1500,
+                "height": 1403,
+                "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/9952\/9291\/products\/71qDDcBzvnL._SL1500__1_d0add1ea-b4b5-4a29-87b3-5b799fcd3b03.jpg?v=1549550406",
+                "variant_ids": [
+                    13688866963531,
+                    13688866996299,
+                    13688867029067,
+                    13688867061835,
+                    13688867094603
+                ]
+            }, {
+                "id": 4276781645899,
+                "product_id": 1500523298891,
+                "position": 3,
+                "created_at": "2019-02-07T09:40:06-05:00",
+                "updated_at": "2019-02-07T09:40:06-05:00",
+                "alt": null,
+                "width": 1500,
+                "height": 1403,
+                "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/9952\/9291\/products\/81jW87xBSjL._SL1500__1_4957fcec-b34e-41a1-98cc-c1bb72fdf488.jpg?v=1549550406",
+                "variant_ids": [
+                    13688867291211,
+                    13688867323979,
+                    13688867356747,
+                    13688867389515,
+                    13688867422283
+                ]
+            }, {
+                "id": 4276781678667,
+                "product_id": 1500523298891,
+                "position": 4,
+                "created_at": "2019-02-07T09:40:06-05:00",
+                "updated_at": "2019-02-07T09:40:06-05:00",
+                "alt": null,
+                "width": 1500,
+                "height": 1403,
+                "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/9952\/9291\/products\/71uv96XB6mL._SL1500__1_56c33c60-8d5a-479d-9384-36f99d5299cd.jpg?v=1549550406",
+                "variant_ids": [
+                    13688867618891,
+                    13688867651659,
+                    13688867684427,
+                    13688867717195,
+                    13688867749963
+                ]
+            }, {
+                "id": 4276781711435,
+                "product_id": 1500523298891,
+                "position": 5,
+                "created_at": "2019-02-07T09:40:06-05:00",
+                "updated_at": "2019-02-07T09:40:06-05:00",
+                "alt": null,
+                "width": 1500,
+                "height": 1403,
+                "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/9952\/9291\/products\/81e47ncNgoL._SL1500__1_eee76817-7af4-481b-b670-79c9692e05f7.jpg?v=1549550406",
+                "variant_ids": [
+                ]
+            }, {
+                "id": 4276781744203,
+                "product_id": 1500523298891,
+                "position": 6,
+                "created_at": "2019-02-07T09:40:06-05:00",
+                "updated_at": "2019-02-07T09:40:06-05:00",
+                "alt": null,
+                "width": 1500,
+                "height": 1403,
+                "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/9952\/9291\/products\/71GLem4MURL._SL1500__1_435121eb-71c2-403d-9a45-9cf452a74dc3.jpg?v=1549550406",
+                "variant_ids": [
+                ]
+            }],
+            "image": {
+                "id": 4276781580363,
+                "product_id": 1500523298891,
+                "position": 1,
+                "created_at": "2019-02-07T09:40:06-05:00",
+                "updated_at": "2019-02-07T09:40:06-05:00",
+                "alt": null,
+                "width": 1500,
+                "height": 1403,
+                "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/9952\/9291\/products\/8187mxnU4fL._UL1500__1_d4e60181-765b-4d8a-bc11-b060e7c4be6c.jpg?v=1549550406",
+                "variant_ids": [
+                    13688866799691,
+                    13688866832459,
+                    13688866865227,
+                    13688866897995,
+                    13688866930763
+                ]
+            }
+        }
+		
+		
+		//initializing option1 javascript object - it contains 
+        var option1 = [{
+        }]
+		
+        let option1Name = product.options[0].name;
+        let option1Types = product.options[0].values;
+		
+        option1Types.forEach((n, index) => {
+            option1[index] = {
+                "name": option1Name,
+                "value": n,
+                "option2": [{}],
+            }
+        })
+        var option2Men = [];
+        var option2Female = [];
+        var colorsMen = [];
+        var colorsFemale = [];
+        product.variants.forEach((n, index) => {
+            //get mens option2
+            if (n.option1 == option1Types[0]) {
+                option2Men.push(n.option2);
+                colorsMen = getUnique(option2Men);
+                colorsMen.forEach((n, index) => {
+                    option1[0].option2[index] = {
+                        "name": "color",
+                        "value": n,
+                        "option3": [{}]
+                    }
+                })
+            }
+            //get female option2 
+            else if (n.option1 == option1Types[1]) {
+                option2Female.push(n.option2);
+                colorsFemale = getUnique(option2Female);
+                colorsFemale.forEach((n, index) => {
+                    option1[1].option2[index] = {
+                        "name": "color",
+                        "value": n,
+                        "option3": [{}]
+                    }
+                })
+            }
+        })
+        function getUnique(array) {
+            var uniqueArray = [];
+            // Loop through array values
+            for (i = 0; i < array.length; i++) {
+                if (uniqueArray.indexOf(array[i]) === -1) {
+                    uniqueArray.push(array[i]);
+                }
+            }
+            return uniqueArray;
+        }
+        product.variants.forEach((n, index) => {
+            // green and men 
+            if ((n.option2 == colorsMen[0]) && (n.option1 == option1Types[0])) {
+                option1[0].option2[0].option3.push({
+                    "name": "size",
+                    "value": n.option3,
+                })
+            }
+            //Navy and men 
+            else if ((n.option2 == colorsMen[1]) && (n.option1 == option1Types[0])) {
+                option1[0].option2[1].option3.push({
+                    "name": "size",
+                    "value": n.option3,
+                })
+            }
+            // green and female 
+            else if ((n.option2 == colorsFemale[0]) && (n.option1 == option1Types[1])) {
+                option1[1].option2[0].option3.push({
+                    "name": "size",
+                    "value": n.option3,
+                })
+            }
+            // black and female 
+            else if ((n.option2 == colorsFemale[1]) && (n.option1 == option1Types[1])) {
+                option1[1].option2[1].option3.push({
+                    "name": "size",
+                    "value": n.option3,
+                })
+            }
+        });
+		
+		
+		//Time Complexity -> (n+1)c1+(n+1)c2+C
+        console.log(option1);
+    </script>
+</body>
+
+</html>
+
